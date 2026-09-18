@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "dio-explorer-mcp": {
+      "command": "node",
+      "args": [
+        "C:\\Users\\BlueShift\\.bob\\DioBobIBM\\dio_explorer\\mcp\\build\\index.js"
+      ]
+    }
+  }
+}

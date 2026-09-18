@@ -1,6 +1,3 @@
-# Bob IDE config (local only)
-.bob/
-.bobignore
 
 # Python
 __pycache__/
