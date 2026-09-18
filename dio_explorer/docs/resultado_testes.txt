@@ -1,0 +1,181 @@
+
+╔══════════════════════════════════════════════════════════════════╗
+║             RELATÓRIO DE TESTES — DIO Explorer                   ║
+║             Gerado em: 09/07/2025 — Executado pelo Bob (IBM)     ║
+╚══════════════════════════════════════════════════════════════════╝
+
+Comandos testados : /trilha  |  /desafio  |  /certificado
+Tecnologia foco   : JAVA
+Aluno simulado    : João Silva
+Arquivo de testes : dio_explorer/src/test_dio_explorer.py
+Módulo testado    : dio_explorer/src/dio_explorer.py
+
+════════════════════════════════════════════════════════════════════
+RESULTADO DOS TESTES UNITÁRIOS
+════════════════════════════════════════════════════════════════════
+
+  TestCarregarTrilhas
+  ├─ [✅ PASS] test_arquivo_inexistente_lanca_excecao
+  ├─ [✅ PASS] test_quantidade_trilhas_corretas
+  ├─ [✅ PASS] test_retorna_dict_com_chave_metadata
+  └─ [✅ PASS] test_retorna_dict_com_chave_trilhas
+
+  TestBuscarTrilha  (/trilha)
+  ├─ [✅ PASS] test_encontra_java_exato
+  ├─ [✅ PASS] test_encontra_java_maiusculo
+  ├─ [✅ PASS] test_encontra_java_minusculo
+  ├─ [✅ PASS] test_encontra_python
+  ├─ [✅ PASS] test_encontra_python_minusculo
+  ├─ [✅ PASS] test_espacos_extras_sao_ignorados
+  ├─ [✅ PASS] test_string_vazia_retorna_none
+  ├─ [✅ PASS] test_tecnologia_inexistente_retorna_none
+  ├─ [✅ PASS] test_trilha_java_nivel_avancado
+  ├─ [✅ PASS] test_trilha_java_promocao_ativa
+  ├─ [✅ PASS] test_trilha_java_tem_badges
+  ├─ [✅ PASS] test_trilha_java_tem_lives
+  ├─ [✅ PASS] test_trilha_java_tem_modulos_corretos
+  ├─ [✅ PASS] test_trilha_java_tem_xp_correto
+  └─ [✅ PASS] test_trilha_java_vitalicio_true
+
+  TestListarTecnologias
+  ├─ [✅ PASS] test_cada_item_tem_tecnologia_e_nivel
+  ├─ [✅ PASS] test_quantidade_correta
+  └─ [✅ PASS] test_retorna_lista
+
+  TestFormatarTrilha
+  ├─ [✅ PASS] test_formatacao_java_contem_badge
+  ├─ [✅ PASS] test_formatacao_java_contem_nome
+  ├─ [✅ PASS] test_formatacao_java_contem_tecnologia
+  ├─ [✅ PASS] test_formatacao_java_contem_xp
+  ├─ [✅ PASS] test_formatacao_java_promocao_ativa
+  ├─ [✅ PASS] test_formatacao_python_sem_promocao
+  └─ [✅ PASS] test_formatacao_vitalicio_sim
+
+  TestNormalizarNivel  (/desafio - auxiliar)
+  ├─ [✅ PASS] test_avancado_com_acento
+  ├─ [✅ PASS] test_avancado_sem_acento
+  ├─ [✅ PASS] test_basico_acentuado
+  ├─ [✅ PASS] test_basico_lower
+  ├─ [✅ PASS] test_intermediario
+  ├─ [✅ PASS] test_intermediario_sem_acento
+  ├─ [✅ PASS] test_nivel_invalido_retorna_intermediario
+  └─ [✅ PASS] test_string_vazia_retorna_intermediario
+
+  TestGerarDesafio  (/desafio)
+  ├─ [✅ PASS] test_campos_obrigatorios
+  ├─ [✅ PASS] test_java_tem_tema_especifico
+  ├─ [✅ PASS] test_nivel_invalido_gera_aviso
+  ├─ [✅ PASS] test_nivel_normalizado_avancado
+  ├─ [✅ PASS] test_retorna_dict
+  ├─ [✅ PASS] test_sem_aviso_para_parametros_validos
+  ├─ [✅ PASS] test_tecnologia_desconhecida_gera_aviso
+  ├─ [✅ PASS] test_tecnologia_preservada
+  ├─ [✅ PASS] test_tempo_avancado
+  ├─ [✅ PASS] test_xp_avancado
+  ├─ [✅ PASS] test_xp_basico
+  └─ [✅ PASS] test_xp_intermediario
+
+  TestGerarCertificado  (/certificado)
+  ├─ [✅ PASS] test_badges_java_presentes
+  ├─ [✅ PASS] test_campos_obrigatorios
+  ├─ [✅ PASS] test_case_insensitive_java_minusculo
+  ├─ [✅ PASS] test_certificado_python
+  ├─ [✅ PASS] test_codigo_formato_correto
+  ├─ [✅ PASS] test_data_emissao_formato_correto
+  ├─ [✅ PASS] test_nome_aluno_correto
+  ├─ [✅ PASS] test_retorna_dict
+  ├─ [✅ PASS] test_trilha_encontrada_aviso_none
+  ├─ [✅ PASS] test_trilha_inexistente_sem_aviso_none
+  ├─ [✅ PASS] test_trilha_inexistente_xp_generico
+  ├─ [✅ PASS] test_trilha_java_nivel_avancado
+  └─ [✅ PASS] test_trilha_java_xp_correto
+
+  TestFluxoCompleto  (Integração: /trilha → /desafio → /certificado)
+  ├─ [✅ PASS] test_fluxo_certificado_com_dados_da_trilha
+  ├─ [✅ PASS] test_fluxo_codigo_certificado_unico
+  ├─ [✅ PASS] test_fluxo_desafio_nivel_da_trilha
+  └─ [✅ PASS] test_fluxo_trilha_existe
+
+════════════════════════════════════════════════════════════════════
+RESUMO EXECUTIVO
+════════════════════════════════════════════════════════════════════
+
+  Total de testes  : 66
+  ✅ Aprovados      : 66
+  ❌ Reprovados     : 0
+  % de aprovação   : 100.0%
+  Cobertura (lines): 100%  (61 statements, 0 missed)
+  Meta (≥ 70%)     : ✅ META ATINGIDA — 100% de cobertura e 100% de aprovação
+
+════════════════════════════════════════════════════════════════════
+RELATÓRIO DE COBERTURA (pytest-cov)
+════════════════════════════════════════════════════════════════════
+
+  Name              Stmts   Miss  Cover   Missing
+  -----------------------------------------------
+  dio_explorer.py      61      0   100%
+  -----------------------------------------------
+  TOTAL                61      0   100%
+
+════════════════════════════════════════════════════════════════════
+FLUXO SIMULADO — JAVA / João Silva
+════════════════════════════════════════════════════════════════════
+
+  PASSO 1: /trilha Java
+  ─────────────────────
+  Resultado : Trilha encontrada com sucesso ✅
+  Nome      : Java Spring Boot Microservices
+  Nível     : Avançado
+  Módulos   : 18
+  XP Total  : 15.000 XP
+  Vitalício : Sim
+  Badges    : Java Champion | Spring Expert | Microservices Architect | API Designer
+  Promoção  : ATIVA — 40% de desconto (válido até 2025-07-31)
+  Lives     : Spring Boot com Docker (2025-07-12, 120 min)
+              Kafka com Spring (2025-07-26, 90 min)
+
+  PASSO 2: /desafio Java Avançado
+  ────────────────────────────────
+  Resultado        : Desafio gerado com sucesso ✅
+  Nível normalizado: Avançado
+  XP estimado      : 600 XP
+  Tempo sugerido   : 60–120 min
+  Tema sorteado    : (variado a cada execução — banco de temas Java)
+  Temas disponíveis:
+    - Calculadora de Impostos com OOP
+    - Sistema de Filas com BlockingQueue
+    - CRUD com Spring Boot e JPA
+    - Streams API — Processamento de Dados
+  Aviso            : Nenhum (parâmetros válidos)
+
+  PASSO 3: /certificado João Silva Java
+  ───────────────────────────────────────
+  Resultado    : Certificado gerado com sucesso ✅
+  Aluno        : João Silva
+  Trilha       : Java Spring Boot Microservices
+  Tecnologia   : Java
+  Nível        : Avançado
+  Módulos      : 18
+  XP Total     : 15.000 XP
+  Código       : DIO-5-2025-[6 chars aleatórios gerados dinamicamente]
+  Data Emissão : [data de hoje no formato DD/MM/YYYY]
+  Aviso        : Nenhum (trilha encontrada no catálogo)
+
+════════════════════════════════════════════════════════════════════
+ESTRUTURA DE ARQUIVOS CRIADOS
+════════════════════════════════════════════════════════════════════
+
+  dio_explorer/
+  ├── src/
+  │   ├── dio_explorer.py          ← Módulo principal (lógica dos comandos)
+  │   ├── test_dio_explorer.py     ← 66 testes unitários + integração
+  │   └── run_tests.py             ← Script executor de testes + relatório
+  ├── data/
+  │   └── trilhas_dio.json         ← Base de dados das trilhas DIO
+  └── docs/
+      └── resultado_testes.txt     ← Este arquivo ← VOCÊ ESTÁ AQUI
+
+════════════════════════════════════════════════════════════════════
+  Emitido por IBM Bob — DIO Explorer Test Suite
+  "Qualidade começa com testes bem escritos."
+════════════════════════════════════════════════════════════════════
